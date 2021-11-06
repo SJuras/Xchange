@@ -178,6 +178,7 @@ export const Button = styled.button`
 	padding: 5px 30px;
 	color: white;
 	font-size: ${({ fontSize }) => (fontSize ? fontSize : '1rem')};
+
 	outline: none;
 	cursor: pointer;
 `;

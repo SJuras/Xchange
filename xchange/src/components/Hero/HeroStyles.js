@@ -5,6 +5,7 @@ import { Column } from '../../globalStyles';
 export const LeftColumn = styled(Column)`
 	align-items: start;
 	width: 50%;
+
 	@media screen and (max-width: 960px) {
 		display: none;
 	}
@@ -12,10 +13,12 @@ export const LeftColumn = styled(Column)`
 
 export const RightColumn = styled(Column)`
 	justify-content: center;
+
 	> div {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
+
 		@media screen and (max-width: 960px) {
 			align-items: center;
 		}
@@ -90,15 +93,18 @@ export const CurrencyDropdown = styled.button`
 	border: none;
 	border-radius: 0 5px 5px 0;
 	padding: 15px;
+
 	&:hover {
 		background-color: #374881f0;
 		border: 1px solid #c2c2c2;
 	}
+
 	> span {
 		margin-right: 0.8em;
 		font-size: 1.1em;
 		color: #dfdfdf;
 	}
+
 	> img {
 		margin-right: 4px;
 	}
@@ -117,6 +123,7 @@ export const List = styled(motion.ul)`
 	position: absolute;
 	color: black;
 	list-style-type: none;
+
 	@media screen and (max-width: 960px) {
 		right: 0;
 		bottom: 0;
@@ -136,9 +143,11 @@ export const ListItem = styled.li`
 	padding: ${({ padding }) => (padding ? padding : '6px')};
 	border-radius: 4px;
 	cursor: ${({ noPointer }) => (noPointer ? 'auto' : 'pointer')};
+
 	> span {
 		margin: 5px;
 	}
+
 	&:hover {
 		background-color: ${({ noHover }) => (noHover ? 'none' : '#d4d4d4')};
 	}
@@ -148,12 +157,15 @@ export const ConversionList = styled.ul`
 	padding-left: 0.5rem;
 	margin-left: 2.5rem;
 	list-style-type: none;
+
 	@media screen and (max-width: 960px) {
 		margin-left: 5.5rem;
 	}
+
 	> li {
 		position: relative;
 		display: flex;
+
 		&::before {
 			content: '';
 			display: block;
@@ -168,6 +180,7 @@ export const ConversionList = styled.ul`
 			left: -36px;
 			margin-top: 12px;
 		}
+
 		&::after {
 			content: '';
 			position: absolute;
@@ -182,18 +195,22 @@ export const ConversionList = styled.ul`
 			height: calc(100% + 16px);
 			left: -33px;
 		}
+
 		&:first-child:after {
 			height: calc(100% + 16px);
 			top: 0;
 		}
+
 		&:first-child {
 			padding-top: 1rem;
 		}
+
 		&::after,
 		&::before {
 			background-color: #253655;
 			border-color: #253655;
 		}
+
 		> span {
 			color: #d5d5d5;
 			padding: 0.4rem 0;
@@ -201,13 +218,16 @@ export const ConversionList = styled.ul`
 			margin-right: 0.4rem;
 			font-size: clamp(0.8rem, 2vw, 1rem);
 		}
+
 		> span.rate {
 			color: #00b9ff;
 			font-weight: 600;
 		}
+
 		> span:first-child {
 			min-width: clamp(70px, 5vw, 100px);
 		}
+
 		> div {
 			position: absolute;
 			display: block;
@@ -226,6 +246,7 @@ export const ConversionList = styled.ul`
 			font-size: 16px;
 		}
 	}
+
 	> li.total > span {
 		font-size: 1.05rem;
 		color: white;
@@ -241,6 +262,7 @@ export const Features = styled.div`
 	width: 100%;
 	align-items: center;
 	/* justify-content: space-between; */
+
 	> div {
 		display: flex;
 		flex-flow: column;
@@ -248,6 +270,7 @@ export const Features = styled.div`
 		margin: 0 2rem;
 		min-width: 140px;
 		justify-content: center;
+
 		> a {
 			text-decoration: none;
 			font-weight: 600;
@@ -260,6 +283,7 @@ export const Features = styled.div`
 			width: 40px;
 			margin-bottom: 1rem;
 		}
+
 		> img.reviews {
 			margin-bottom: 1rem;
 			width: 56px;
@@ -275,20 +299,24 @@ export const GetStarted = styled.div`
 	> div {
 		display: flex;
 		justify-content: center;
+
 		> span {
 			padding: 10px 15px;
 			text-align: center;
 		}
+
 		> span:first-child {
 			border-right: 1px solid #253655;
 		}
 		margin: 0.7rem 0;
 	}
+
 	> button {
 		border: none;
 		padding: 10px 10px;
 		font-weight: 600;
 		background-color: #2ed06e;
+
 		&:hover {
 			transition: background-color 0.2s ease-in;
 			background-color: #107f3c;
